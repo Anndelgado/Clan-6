@@ -5,12 +5,14 @@ capuchino = 7000
 pastel = 6000
 
 total_dia = 0
+seguir = True
 
-while True:
+while seguir:
 
     producto = input("\n¿Que desea?\n - Cafe\n - Capuchino\n - Pastel\n - Salir:\n ").lower()
 
     if producto == "salir":
+        seguir = False
         break
 
     cantidad = int(input("Cantidad: "))
